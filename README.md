@@ -1,4 +1,4 @@
-#Resistor Value Calculator app
+# Resistor Value Calculator app
 
 Create a new app with yarn or npm
 
