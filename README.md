@@ -35,7 +35,8 @@ Open your dev environment, if you are using VS Code type > code . ENTER
     <script src="https://unpkg.com/react-dom@^16/umd/react-dom.production.min.js"
             crossorigin />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.0.0-beta.5/react-bootstrap.js" integrity="sha256-BgySDZiy0+l7Ia7gtEQXEAmzhI+y4+JuUbktR5lZavQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/1.0.0-beta.5/react-bootstrap.js" 
+    integrity="sha256-BgySDZiy0+l7Ia7gtEQXEAmzhI+y4+JuUbktR5lZavQ=" crossorigin="anonymous"></script>
 ```
 
 You're all done with the setup, now go to command prompt, start the tests and the app.
