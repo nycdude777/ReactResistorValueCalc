@@ -1,15 +1,32 @@
 # Setting it all up
 
-### `> yarn create react-app rcc-demo`
+First, create a new react app in your react app folder...
 
-After your app is created, extract the zip into your new app directory,
-making sure package.json is directly in your new app directory, along with src folder.
+### `> yarn create react-app rcc-demo` 
 
   NOTE: It is important that you create your react app first before extracting the zip, 
   some of the files that create-react-app creates will be replaced with files from the zip.
   If you reverse the order, you will overwrite the demo app with a blank App.js
 
+In the meantime, extract the contents of the zip that you just downloaded to another location, 
+it can be your downloads folder or some temp directory.  The reason for this is that the unzipping procedure 
+will create a new folder named ReactResistorValueCalc-master, in which it will extract all our app files.  
+
+Once that is done and your react app is ready, go into ReactResistorValueCalc-master folder and grab all the files there, including the two subfolders, public and src.  
+
+Copy/Cut and paste them into your new rcc-demo react app folder that was just created by create-react-app.
+
+You will be asked if you want to replace the files in destination folder, say YES (to all if that comes up).
+
+Now in that same folder, press CTRL key on your keyboard and with your mouse select 2 items, /node_modules folder and yarn.lock file (or package.lock if you use npm).  (Make sure: You don't select package.json)
+
+Hit DELETE key.
+
+Now go to your command prompt again, cd to the new rcc-demo directory, and run:
+
 ### `> yarn install`
+
+This will install all the dependencies.
 
 Open your dev environment, if you are using VS Code type > code . ENTER
 
