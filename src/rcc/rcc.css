@@ -1,262 +1,262 @@
-﻿table.chart {
-    width: 100%;
+body,
+html {
+  overflow-x: hidden;
+}
+table.chart {
+  width: 100%;
 }
 
-table.chart th, td {
-    text-align: center;
-    padding: 10px 0;
-    
+table.chart th,
+td {
+  text-align: center;
+  padding: 5px 0;
 }
 
 .resistor-model {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
-.resistor-model div { position: absolute; }
+.resistor-model div {
+  position: absolute;
+}
 .resistor-model .lead {
-    height: 10px;
-    width: 10%;
-    top: calc(50% - 5px);
-    background-color: black;
+  height: 10px;
+  width: 10%;
+  top: calc(50% - 5px);
+  background-color: black;
 }
 
 .jumbotron button {
-    margin: 5px 7px;
+  margin: 5px 7px;
 }
-    
 
 .resistor-model .body {
-        height: 200px;
-        width: 80%;
-        top: calc(50% - 100px);
-        left: 10%;
-        background-color: rgba(200,200,200,1);
-        border: 10px solid black;
-    }
+  height: 200px;
+  width: 80%;
+  top: calc(50% - 100px);
+  left: 10%;
+  background-color: rgba(200, 200, 200, 1);
+  border: 10px solid black;
+}
 
-    .resistor-model .body .band {
-        width: 10%;
-        height: 100%;
-        /*border: thin solid black;*/
-        background-image: linear-gradient(135deg, #f5f5f5 25%, #e8e8e8 25%, #e8e8e8 50%, #f5f5f5 50%, #f5f5f5 75%, #e8e8e8 75%, #e8e8e8 100%);
-        background-size: 28.28px 28.28px;
+.resistor-model .body .band {
+  width: 10%;
+  height: 100%;
+  /*border: thin solid black;*/
+  background-image: linear-gradient(
+    135deg,
+    #f5f5f5 25%,
+    #e8e8e8 25%,
+    #e8e8e8 50%,
+    #f5f5f5 50%,
+    #f5f5f5 75%,
+    #e8e8e8 75%,
+    #e8e8e8 100%
+  );
+  background-size: 28.28px 28.28px;
 
-        cursor: pointer;
-    }
+  cursor: pointer;
+}
 
-    .resistor-model .body .band .index-tab {
-        position: absolute;
-        width: 30px;
-        text-align: center;
-        font-weight: bold;
-        border: 2px solid #000;
-        background-color: #fff;
-        color: #000;
-        top: -31px;
+.resistor-model .body .band .index-tab {
+  position: absolute;
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  top: -31px;
 
-        left: calc(50% - 15px);
-    }
+  left: calc(50% - 15px);
+}
 
-    .resistor-model .body .band .function-tab {
-        position: absolute;
-        width: 50px;
-        text-align: center;
-        font-weight: bold;
-        border: 1px solid #000;
-        background-color: #fff;
-        color: #000;
-        bottom: -35px;
+.resistor-model .body .band .function-tab {
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  bottom: -35px;
 
-        left: calc(50% - 25px);
-    }
+  left: calc(50% - 25px);
+}
 
-.sketch-picker .flexbox-fix:last-of-type{
-    display: block !important;
+.sketch-picker .flexbox-fix:last-of-type {
+  display: block !important;
 }
 
 .sketch-picker .flexbox-fix:last-of-type:before {
+  content: "Available Band Colors\A";
 
-    content: "Available Band Colors\A";
-
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-    .sketch-picker .flexbox-fix:last-of-type > div {
-        display: inline-block;
-        margin: 0 4px 5px !important;
-        width: 20px !important;
-        height: 20px !important;
-    }
+.sketch-picker .flexbox-fix:last-of-type > div {
+  display: inline-block;
+  margin: 0 4px 5px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
 
 .inlineColorIndicatorCircle {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-bottom: -6px;
-    border-radius: 15px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -6px;
+  border-radius: 15px;
 }
 
 .resistor-info {
-    text-align: center;
-    padding: 40px 10px;
-    color: #999;
+  text-align: center;
+  padding: 40px 10px;
+  color: #999;
 }
 
 .resistor-info > .data {
-    text-align: center;
-    padding: 10px;
-    color: #000;
+  text-align: center;
+  padding: 10px;
+  color: #000;
 }
 
 .resistor-info .data .shortform {
-    font-size: 3em;
-    font-weight: bold;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 @media (min-width: 360px) {
-    
-    .resistor-model .body {
-        width: 100%;
-        left: 0;
-        border-radius: 0px;
-    }
+  .resistor-model .body {
+    width: 100%;
+    left: 0;
+    border-radius: 0px;
+  }
 
-    .resistor-model .lead.left {
-        left: -10%;
-    }
+  .resistor-model .lead.left {
+    left: -10%;
+  }
 
-    .resistor-model .lead.right {
-        right: -10%;
-    }
+  .resistor-model .lead.right {
+    right: -10%;
+  }
 
-    .resistor-model .body .band {
-        background-image: linear-gradient(135deg, #d1d1d1 25%, #e8e8e8 25%, #e8e8e8 50%, #d1d1d1 50%, #d1d1d1 75%, #e8e8e8 75%, #e8e8e8 100%);
-        background-size: 14.14px 14.14px;
-    }
+  .resistor-model .body .band {
+    background-image: linear-gradient(
+      135deg,
+      #d1d1d1 25%,
+      #e8e8e8 25%,
+      #e8e8e8 50%,
+      #d1d1d1 50%,
+      #d1d1d1 75%,
+      #e8e8e8 75%,
+      #e8e8e8 100%
+    );
+    background-size: 14.14px 14.14px;
+  }
 
-    .resistor-model .body .band {
-        width: 15%;
-    }
+  .resistor-model .body .band {
+    width: 15%;
+  }
 
-    
+  .resistor-model .body .band:nth-of-type(1) {
+    left: 0%;
+  }
 
-        .resistor-model .body .band:nth-of-type(1) {
-            left: 0%;
-            
-        }
+  .resistor-model .body .band:nth-of-type(2) {
+    left: 20%;
+  }
 
-        .resistor-model .body .band:nth-of-type(2) {
-            left: 20%;
-        }
+  .resistor-model .body .band:nth-of-type(3) {
+    left: 40%;
+  }
 
-        .resistor-model .body .band:nth-of-type(3) {
-            left: 40%;
-        }
+  .resistor-model .body .band:nth-of-type(4) {
+    left: 60%;
+  }
 
-        .resistor-model .body .band:nth-of-type(4) {
-            left: 60%;
-        }
+  .resistor-model .body .band:nth-of-type(5) {
+    right: 0%;
+  }
 
-        .resistor-model .body .band:nth-of-type(5) {
-            right: 0%;
-        }
+  .sketch-picker {
+    width: unset !important;
+  }
 
-        .sketch-picker {
-            width: unset !important;
-        }
+  .color-picker-panel {
+    display: inline-block;
+    vertical-align: top;
+  }
 
-    .color-picker-panel {
-        
-        display: inline-block;
-        vertical-align: top;
-    }
-
-        .color-picker-panel.right {
-            padding-top: 10px;
-        }
-
-    
-
+  .color-picker-panel.right {
+    padding-top: 10px;
+  }
 }
 @media (min-width: 450px) {
-    .sketch-picker {
-        width: 200px !important;
-    }
+  .sketch-picker {
+    width: 200px !important;
+  }
 
-    .color-picker-panel {
-        height: 340px;
-        display: inline-block;
-        vertical-align: top;
-    }
+  .color-picker-panel {
+    height: 340px;
+    display: inline-block;
+    vertical-align: top;
+  }
 
-        .color-picker-panel.right {
-            padding-left: 20px;
-        }
+  .color-picker-panel.right {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 576px) {
-    .resistor-model {
-        height: 200px;
-    }
+  .resistor-model {
+    height: 200px;
+  }
 
-        .resistor-model .body .band {
-            width: 10%;
-        }
+  .resistor-model .body .band {
+    width: 10%;
+  }
 
-        .resistor-model .body {
-            width: 80%;
-            left: 10%;
-            border-radius: 30px;
-        }
+  .resistor-model .body {
+    width: 80%;
+    left: 10%;
+    border-radius: 30px;
+  }
 
-        .resistor-model .lead.left {
-            left: 0;
-        }
+  .resistor-model .lead.left {
+    left: 0;
+  }
 
-        .resistor-model .lead.right {
-            right: 0;
-        }
+  .resistor-model .lead.right {
+    right: 0;
+  }
 
-        .resistor-model .body .band:nth-of-type(1) {
-            left: 5%;
-        }
+  .resistor-model .body .band:nth-of-type(1) {
+    left: 5%;
+  }
 
-        .resistor-model .body .band:nth-of-type(2) {
-            left: 20%;
-        }
+  .resistor-model .body .band:nth-of-type(2) {
+    left: 20%;
+  }
 
-        .resistor-model .body .band:nth-of-type(3) {
-            left: 35%;
-        }
+  .resistor-model .body .band:nth-of-type(3) {
+    left: 35%;
+  }
 
-        .resistor-model .body .band:nth-of-type(4) {
-            left: 50%;
-        }
+  .resistor-model .body .band:nth-of-type(4) {
+    left: 50%;
+  }
 
-        .resistor-model .body .band:nth-of-type(5) {
-            right: 10%;
-        }
-    
-        .sketch-picker {
-            width: 200px !important;
-        }
+  .resistor-model .body .band:nth-of-type(5) {
+    right: 10%;
+  }
 
-    
+  .sketch-picker {
+    width: 200px !important;
+  }
 }
 
-@media (max-width: 400px){
-    .modal-dialog-centered {
-        margin: 0px;
-    }
-    .modal {
-        width: calc(100% - 21px);
-    }
-    
-    .modal-body {
-        padding: 0;
-    }
-}
+
