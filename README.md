@@ -1,7 +1,9 @@
 # ReactResistorValueCalc
 Demo App
 
+```
 > yarn create react-app rcc-demo
+```
 
 After your app is created, extract the zip into your new app directory,
 making sure package.json is directly in your new app directory, along with src folder.
@@ -10,7 +12,9 @@ making sure package.json is directly in your new app directory, along with src f
   some of the files that create-react-app creates will be replaced with files from the zip.
   If you reverse the order, you will overwrite the demo app with a blank App.js
 
-> yarn install
+```
+**yarn install**
+```
 
 Open your dev environment, if you are using VS Code type > code . ENTER
 
